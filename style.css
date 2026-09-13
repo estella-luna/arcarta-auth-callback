@@ -1,0 +1,78 @@
+:root {
+  color-scheme: light dark;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+  background: #f8f7fb;
+  color: #17151c;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at top, #eee8ff 0, #f8f7fb 46%, #ffffff 100%);
+}
+
+main {
+  width: min(32rem, calc(100% - 3rem));
+  padding: 2.5rem 2rem;
+  text-align: center;
+  border: 1px solid rgba(96, 72, 148, 0.14);
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 1.5rem 4rem rgba(49, 35, 80, 0.12);
+}
+
+.eyebrow {
+  margin: 0 0 0.75rem;
+  color: #7655bd;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+#status {
+  margin: 1rem auto 0;
+  color: #5d5866;
+  line-height: 1.8;
+}
+
+#return-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.2rem;
+  border-radius: 999px;
+  background: #7655bd;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#return-link[hidden] {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    background: #10131a;
+    color: #f7f5fb;
+  }
+
+  body {
+    background: radial-gradient(circle at top, #2b2340 0, #10131a 48%, #0b0d12 100%);
+  }
+
+  main {
+    border-color: rgba(217, 201, 255, 0.17);
+    background: rgba(24, 27, 36, 0.9);
+  }
+
+  #status {
+    color: #c4becd;
+  }
+}
