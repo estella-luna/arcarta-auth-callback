@@ -7,4 +7,4 @@ Static, dependency-free callback bridge for ARCARTA LINE Login.
 - Does not use cookies, analytics, storage, external scripts, or network requests.
 - Contains no ARCARTA source code or credentials.
 
-Published route: `https://sl-akr.github.io/arcarta-auth-callback/line/`
+Published route: `https://sl-akr.github.io/arcarta-auth-callback/`
